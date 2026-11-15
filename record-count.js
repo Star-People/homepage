@@ -1,7 +1,7 @@
 /* Read only the catalog header; the complete research dataset is tens of MB. */
-const RECORD_CATALOG_URL = 'https://ufo-files.github.io/relationship-graph-builder/data/catalog.json';
+const RECORD_CATALOG_URL = 'https://data.starpeople.ai/data/catalog.json';
 const RECORD_HEADER_LIMIT = 16384;
-const SOURCE_INVENTORY_URL = 'https://raw.githubusercontent.com/ufo-files/homepage/live-inventory/source-inventory.json';
+const SOURCE_INVENTORY_URL = 'https://raw.githubusercontent.com/Star-People/homepage/live-inventory/source-inventory.json';
 
 async function fetchSourceInventory(fetcher = fetch) {
   const response = await fetcher(`${SOURCE_INVENTORY_URL}?minute=${Math.floor(Date.now() / 60000)}`, {
@@ -149,7 +149,7 @@ function renderSources(catalog, inventory) {
       const label = source.name.replaceAll('-', ' ');
       const link = document.createElement(source.awaitingProcessing ? 'span' : 'a');
       link.textContent = label;
-      if (!source.awaitingProcessing) link.href = `https://github.com/ufo-files/machine-data/tree/main/${encodeURIComponent(source.name)}`;
+      if (!source.awaitingProcessing) link.href = `https://github.com/Star-People/machine-data/tree/main/${encodeURIComponent(source.name)}`;
       name.append(link);
       row.append(name);
       const archived = inventory.sources.find(item => item.name === source.name);
@@ -180,7 +180,7 @@ function renderSources(catalog, inventory) {
       const explore = document.createElement('a');
       const config = JSON.stringify({ type: 'document', allSources: false, sources: source.researchSources || [source.name], titleMode: 'auto' });
       const encoded = btoa(Array.from(new TextEncoder().encode(config), byte => String.fromCharCode(byte)).join(''));
-      explore.href = `https://ufo-files.github.io/relationship-graph-builder/#config=${encodeURIComponent(encoded)}`;
+      explore.href = `https://data.starpeople.ai/#config=${encodeURIComponent(encoded)}`;
       explore.textContent = 'Explore';
       explore.setAttribute('aria-label', `Explore ${label}`);
       if (source.awaitingProcessing) research.textContent = pendingResearchLabel(archived);
