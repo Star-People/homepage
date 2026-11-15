@@ -6,7 +6,7 @@ const ROOT = path.resolve(__dirname, "..");
 const OUTPUT_PATH = path.join(ROOT, "assets", "relationship-graph-canvas.svg");
 const networkConfig = Buffer.from(JSON.stringify({ type: "network", title: "People and institutions" }), "utf8").toString("base64");
 const GRAPH_URL = process.env.GRAPH_BUILDER_URL ||
-  `https://ufo-files.github.io/relationship-graph-builder/#config=${encodeURIComponent(networkConfig)}`;
+  `https://files.starpeople.ai/#config=${encodeURIComponent(networkConfig)}`;
 const VIEWPORT = { width: 1440, height: 1000 };
 
 async function main() {

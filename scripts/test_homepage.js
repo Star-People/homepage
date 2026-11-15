@@ -23,6 +23,6 @@ for (const name of ['src/css/style.css', 'src/css/reset.css', 'styles.css']) {
   }
 }
 assert.equal((html.match(/<h1\b/g) || []).length, 1, 'One main heading');
-assert.ok(html.includes('https://ufo-files.github.io/relationship-graph-builder/'), 'Research app remains accessible');
+assert.ok(html.includes('https://files.starpeople.ai/'), 'Research app remains accessible');
 assert.ok(html.includes('https://tips.hushline.app/to/ufo-files'), 'Contact remains accessible');
 console.log('Static resources, navigation targets, heading structure, and research/contact links passed.');

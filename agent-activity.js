@@ -1,6 +1,6 @@
 /* Public aggregate telemetry only; absent days are not inferred as zero work. */
 (function () {
-  const endpoint = 'https://raw.githubusercontent.com/ufo-files/homepage/live-inventory/agent-activity.json';
+  const endpoint = 'https://raw.githubusercontent.com/starpeopleai/homepage/live-inventory/agent-activity.json';
   const patterns = ['', '10 5', '3 5', '12 4 3 4', '18 6'];
   const colorFor = () => 'currentColor';
   let feed;

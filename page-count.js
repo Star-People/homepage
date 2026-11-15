@@ -1,6 +1,6 @@
 'use strict';
 
-const PAGE_COUNT_URL = 'https://raw.githubusercontent.com/ufo-files/machine-data/main/.github/badges/page-count.json';
+const PAGE_COUNT_URL = 'https://raw.githubusercontent.com/starpeopleai/machine-data/main/.github/badges/page-count.json';
 
 function parsePageCount(data) {
   const integer = value => Number.isSafeInteger(value) && value >= 0;

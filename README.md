@@ -2,7 +2,7 @@
 
 The static public entry point for [UFO Files](https://ufo-files.app).
 
-![UFO Files homepage](https://raw.githubusercontent.com/ufo-files/homepage/screenshots/homepage-hero.png)
+![UFO Files homepage](https://raw.githubusercontent.com/starpeopleai/homepage/screenshots/homepage-hero.png)
 
 ## Design
 
@@ -103,3 +103,10 @@ summary. It does not bypass pull requests or write to protected `main`.
 
 Machine-data ingestion continues independently throughout the day. A failed
 graph rebuild or screenshot capture does not request a homepage rebuild.
+
+
+## Current licensing
+
+Original UFO Files software is available under the **UFO Files Noncommercial Shared-Source License 1.0**: no commercial use; distributed derivatives and modified network services must provide corresponding source under the same terms. Original content is **CC BY-NC-SA 4.0**, only to the extent we control its rights.
+
+See [LICENSE](LICENSE), [LICENSE-CONTENT.txt](LICENSE-CONTENT.txt), and [LICENSING.md](LICENSING.md) for scope, exceptions, and the transition from prior grants. These are source-available terms, not an OSI-approved open-source license. Third-party materials and public-domain records retain their own status.
