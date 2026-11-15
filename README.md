@@ -2,7 +2,7 @@
 
 The static public entry point for [UFO Files](https://ufo-files.app).
 
-![UFO Files homepage](https://raw.githubusercontent.com/Star-People/homepage/screenshots/homepage-hero.png)
+![UFO Files homepage](https://raw.githubusercontent.com/starpeopleai/homepage/screenshots/homepage-hero.png)
 
 ## Design
 
