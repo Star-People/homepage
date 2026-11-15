@@ -2,7 +2,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const catalogUrl = process.env.GRAPH_BUILDER_CATALOG_URL ||
-  "https://ufo-files.github.io/relationship-graph-builder/data/catalog.json";
+  "https://data.starpeople.ai/data/catalog.json";
 const outputPath = path.resolve(__dirname, "../data/corpus-leaders.json");
 const categories = [
   ["person", "People"],
